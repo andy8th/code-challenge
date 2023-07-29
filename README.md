@@ -28,18 +28,28 @@ Req1:
 
 Create express.js app and use postgres sql as database.   db.js 
 Make routes where user can register itself. Required fields of user are name, email and password. userController.js Routes.js
+
 User can login with its email and password and gets a JWT token.   userController.js generateToken.js authMiddleware.js
+
 Logged in users can create a post. Post has 3 attribues title, description and a photo.    postController.js Post.js
+
+
 Req 2:
 
 Your manager next week talks to the client and gives you necessary changes to be made this week.
 
 A post will have an attribute when it was created. added creatat attribut in post.js
+
 Post returning api will calculate the time difference like 2s ago, 10d ago, 4w ago, 8m ago and 1yr ago. added function getTimeDifference in postController.js
+
 A post can have multiple photos but atmost 5.   adjust creatpost function in postController.js,  photo.js
+
 A post can be editied.  add updatepost function in postController.js 
+
 Req 3:
 
 A post can have multiple comments. Comments will show the user who commented and the comment. commentController.js comment.js
+
 Need to add pagination in the post and in the comments of the post.  adjust getposts function in postController.js
+
 User have the option to create their username. Update the user model. update user.js  adjust register function in userController.js
